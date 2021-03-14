@@ -1,0 +1,33 @@
+body {
+  background-color: lightblue;
+  font-family: Verdana;
+  margin: 40px;
+}
+
+canvas {
+  border: 1px solid #c3c3c3;
+  height: 200px;
+}
+
+input {
+  font-size: 12pt;
+}
+
+#graybt{
+    background-color: gray;
+  padding: 10px;
+  border: 1px solid grey;
+  font-weight: bold;
+}
+
+#redbt{
+    background-color: red;
+    padding: 10px;
+  border: 1px solid grey;
+  font-weight: bold;
+
+}
+#Blurbt{
+  padding: 10px;
+  border: 1px solid grey;
+  font-weight: bold;}

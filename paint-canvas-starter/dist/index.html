@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - paint canvas starter</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1> Draw Whatever You Want </h1>
+<p> Set Width 
+ <input type="text"  onchange ="setWidth(this.value)" />
+  Set Height
+ <input type="text"  onchange ="setHeight(this.value)" />
+</p> 
+
+<canvas id="canvas1" onmousedown="startPaint()" onmousemove="doPaint(event.offsetX,event.offsetY)" onmouseup="endPaint()">
+  </canvas>
+
+<p> Brush Color
+<input type="color" value="#000 " id="clr"  onchange="setColor(this.value)"/>
+  
+   <input type="range"  id="sizeInput" min="1" max="50" value="5"  oninput="resizeBrush(this.value)"/>
+  
+  <output id="sizeOutput">5</output>
+</p>
+
+<p>
+     <input type="button"  id="clear"  value="Clear Canvas"  onclick="clearCanvas()"/>
+  </p
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
